@@ -1,0 +1,28 @@
+.headerContainer {
+  background-color: #ebe0e9;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  width: 180px;
+  a {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ebe0e9;
+    background-color: #8865c0;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+      background-color: #6e4585;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}

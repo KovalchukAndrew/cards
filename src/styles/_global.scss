@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+input, button, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  background: linear-gradient(180deg, #E6D4DE 0%, #9890C7 100%);
+  min-height: 100vh;
+
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 6px;
+    background: #ECECF9;
+  }
+
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: #8865c0;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background: #8865c0;
+    border-radius: 20px;
+  }
+  .MuiSlider-thumb {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    background: #8865c0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      background: #ECECF9;
+      border-radius: 50%;
+    }
+
+    &:active {
+      background: #6e4585;
+    }
+  }
+
+  .MuiSlider-track {
+    height: 10px;
+    background: #8865c0;
+  }
+
+  .MuiSlider-rail {
+    height: 10px;
+  }
+
+  .MuiButton-root {
+    background-color: #8865c0;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 19px;
+    color: #ECECF9;
+    text-transform: inherit;
+    &:hover {
+      background: #6e4585;
+    }
+  }
+
+  .MuiRadio-root {
+    color: #8865c0;
+    &.Mui-checked {
+      color: #8865c0;
+    }
+  }
+}
+
+

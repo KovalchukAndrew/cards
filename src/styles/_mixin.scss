@@ -1,0 +1,120 @@
+@mixin page_login() {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin main_content() {
+  max-width: 420px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+  border-radius: 10px;
+  background: #F9F9FE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin input_styles() {
+  width: 345px;
+  max-width: 100%;
+  position: relative;
+  margin-top: 30px;
+
+  label {
+    position: absolute;
+    height: 0;
+    top: -5px;
+    left: 0px;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #24254A;
+    opacity: 0.5;
+  }
+
+  input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 2px solid #a4a3a3;
+    padding: 5px 0;
+    outline: none;
+    transition: .4s all;
+    color: #444;
+    margin: 10px 0;
+
+    &:focus {
+      border: none;
+      border-bottom: 2px solid #181883;
+      outline: none;
+    }
+  }
+}
+
+@mixin button_styles() {
+  max-width: 270px;
+  width: 100%;
+  height: 36px;
+  background: #8865c0;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 19px;
+  color: #ECECF9;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 30px;
+}
+
+@mixin checkbox_styles() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  input {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    color: #000;
+    border: 1px solid #444;
+    border-radius: 4px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+    margin-left: 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 5px;
+      width: 8px;
+      height: 14px;
+      border-style: solid;
+      border-color: #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+
+    &:checked {
+      color: #fff;
+      border-color: #8865c0;
+      background: #8865c0;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+

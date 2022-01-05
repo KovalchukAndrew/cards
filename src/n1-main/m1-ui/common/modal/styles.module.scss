@@ -1,0 +1,48 @@
+@import "src/styles/mixin";
+
+.box {
+  background: rgba(51, 51, 51, 0.81);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  @include main_content;
+  max-height: 300px;
+  max-width: 450px;
+  background: #ECECF9;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  position: relative;
+  z-index: 3;
+}
+
+.p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.4em;
+  letter-spacing: .1em;
+
+  &:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+

@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.rowsPerPage {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+

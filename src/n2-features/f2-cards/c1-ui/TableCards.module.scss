@@ -1,0 +1,139 @@
+.table {
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0 4px 14px rgba(45, 46, 70, 0.15);
+    height: 520px;
+}
+
+.thead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #ECECF9;
+
+}
+
+.column {
+    width: 180px;
+    text-align: left;
+}
+
+.tableHeader {
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+    &:nth-child(2) {
+        position: relative;
+
+        &:before {
+            content: '▲';
+            font-size: 15px;
+            position: absolute;
+            top: 16px;
+            left: 52%;
+            width: 1.4em;
+            height: 1.4em;
+            line-height: 1.3em;
+            cursor: pointer;
+        }
+    }
+
+    &:nth-child(3) {
+        position: relative;
+
+        &:before {
+            content: '▲';
+            font-size: 15px;
+            position: absolute;
+            top: 16px;
+            left: 30%;
+            width: 1.4em;
+            height: 1.4em;
+            line-height: 1.3em;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.activeUpdate {
+    &:nth-child(2) {
+        position: relative;
+
+        &:before {
+            content: '▼';
+            top: 18px;
+        }
+    }
+}
+
+.activeGrade {
+    &:nth-child(3) {
+        position: relative;
+
+        &:before {
+            content: '▼';
+            top: 18px;
+        }
+    }
+}
+
+.rows {
+    width: 100%;
+    max-height: 470px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.rowe {
+    background: #ECECF9;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: nowrap;
+
+    &:nth-child(odd) {
+        background: #fff;
+    }
+}
+
+.rowItem {
+    max-width: 180px;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    clear: both;
+    display: inline-block;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.btnBox {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 7px;
+    color: #21268F;
+    border-radius: 2px;
+    background: #D7D8EF;
+    cursor: pointer;
+    &:nth-child(1) {
+        margin-right: 10px;
+    }
+}
+
+.btn[data-color] {
+    background: #F1453D;
+    color: #fff;
+}

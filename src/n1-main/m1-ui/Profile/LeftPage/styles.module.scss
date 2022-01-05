@@ -1,0 +1,76 @@
+.main {
+  max-width: 300px;
+  width: 100%;
+  background: #ECECF9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sortBlock {
+  height: 100%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 90px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8865c0;
+  box-shadow: 0 15px 20px rgba(143, 22, 248, 0.4);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: #929292;
+  transform: translateY(-7px);
+}
+
+.rangeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.range {
+  width: 200px;
+}
+
+.idSortBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 19px;
+  color: #2D2E46;
+  margin-bottom: 15px;
+}
+
+

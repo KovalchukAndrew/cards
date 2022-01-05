@@ -1,0 +1,24 @@
+@import "src/styles/mixin";
+
+.profile {
+  height: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(136, 101, 192, 0.49);
+}
+
+.profileInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.avatar {
+  max-width: 100px;
+  width: 100%;
+}

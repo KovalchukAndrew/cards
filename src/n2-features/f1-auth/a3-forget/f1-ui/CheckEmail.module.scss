@@ -1,0 +1,68 @@
+@import "src/styles/mixin";
+
+
+.container {
+    @include main_content;
+    max-height: 450px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        color: #2D2E46;
+        margin: 25px 0;
+    }
+
+    h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #2D2E46;
+        margin-bottom: 10px;
+    }
+    
+    .iconBox {
+        width: 100px;
+        height: 100px;
+        background-color: #d8c7da;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        .icon {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
+
+    
+    .message {
+        width: 345px;
+        font-family: SF UI Display;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #2D2E46;
+        opacity: 0.5;
+        cursor: pointer;
+        padding-top: 30px;
+        text-align: center;
+    }
+}

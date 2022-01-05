@@ -1,0 +1,114 @@
+@import "src/styles/mixin";
+
+.login {
+  @include main_content;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: #2D2E46;
+    margin: 25px 0;
+  }
+
+  h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #2D2E46;
+    margin-bottom: 10px;
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+}
+
+.inputsBox {
+  @include input_styles ;
+}
+
+.forgot {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  width: 345px;
+  max-width: 100%;
+  justify-content: flex-end;
+  margin: 35px 0 60px 0;
+  color: #2D2E46;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.next {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.btn {
+  @include button_styles;
+}
+
+.notAccount {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #2D2E46;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.singUp {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #21268F;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.error {
+  font-size: 16px;
+  color: red;
+  font-weight: 600;
+  height: 20px;
+}
+
+.remember {
+  @include checkbox_styles;
+
+  span {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #2D2E46;
+  }
+}

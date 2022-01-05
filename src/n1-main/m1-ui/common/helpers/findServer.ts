@@ -1,0 +1,1 @@
+export const serverAPI: any = (window.location.hostname === 'localhost' && process.env.REACT_APP_DEV_SERVER) || (window.location.hostname !== 'localhost' && process.env.REACT_APP_PROD_SERVER)

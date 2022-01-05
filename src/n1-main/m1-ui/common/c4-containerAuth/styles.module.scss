@@ -1,0 +1,5 @@
+@import "src/styles/mixin";
+
+.loginMain {
+  @include page_login;
+}
